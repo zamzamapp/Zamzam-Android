@@ -44,9 +44,11 @@
             android:gravity="center_horizontal"
             android:inputType="numberPassword"
             android:minWidth="210dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/pin_restore_pin_description" />
+            app:layout_constraintTop_toBottomOf="@id/pin_restore_pin_description"
+            tools:visibility="gone" />
 
         <TextView
             android:id="@+id/pin_restore_pin_input_label"
@@ -54,10 +56,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pin_restore_pin_input"
-            tools:text="@string/RegistrationLockFragment__incorrect_pin_try_again" />
+            tools:text="@string/RegistrationLockFragment__incorrect_pin_try_again"
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/pin_restore_forgot_pin"
@@ -71,19 +75,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pin_restore_pin_input_label"
-            tools:visibility="visible"/>
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/pin_restore_keyboard_toggle"
             style="@style/Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@id/pin_restore_pin_confirm"
             app:layout_constraintTop_toBottomOf="@id/pin_restore_forgot_pin"
             app:layout_constraintVertical_bias="1.0"
-            tools:text="Create Alphanumeric Pin" />
+            tools:layout_editor_absoluteX="32dp"
+            tools:text="Create Alphanumeric Pin"
+            tools:visibility="gone" />
 
         <com.dd.CircularProgressButton
             android:id="@+id/pin_restore_pin_confirm"
@@ -93,10 +98,12 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
+            android:visibility="gone"
             app:cpb_textIdle="@string/RegistrationActivity_continue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/pin_restore_skip_button"

@@ -1,7 +1,7 @@
-package org.thoughtcrime.securesms.camera;
+package com.zamzam.chat.camera;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.mediasend.OrderEnforcer;
+import com.zamzam.chat.mediasend.OrderEnforcer;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

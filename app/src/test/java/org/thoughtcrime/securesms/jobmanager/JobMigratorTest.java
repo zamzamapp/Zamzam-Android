@@ -1,12 +1,12 @@
-package org.thoughtcrime.securesms.jobmanager;
+package com.zamzam.chat.jobmanager;
 
 import androidx.annotation.NonNull;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.thoughtcrime.securesms.jobmanager.persistence.JobSpec;
-import org.thoughtcrime.securesms.jobmanager.persistence.JobStorage;
-import org.thoughtcrime.securesms.logging.Log;
+import com.zamzam.chat.jobmanager.persistence.JobSpec;
+import com.zamzam.chat.jobmanager.persistence.JobStorage;
+import com.zamzam.chat.logging.Log;
 
 import java.util.ArrayList;
 import java.util.Arrays;

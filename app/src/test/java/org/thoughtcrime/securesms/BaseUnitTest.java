@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms;
+package com.zamzam.chat;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
-import org.thoughtcrime.securesms.logging.Log;
+import com.zamzam.chat.logging.Log;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -73,6 +73,6 @@ public abstract class BaseUnitTest {
     when(sharedPreferences.getBoolean(anyString(), anyBoolean())).thenReturn(false);
     when(sharedPreferences.getFloat(anyString(), anyFloat())).thenReturn(0f);
     when(context.getSharedPreferences(anyString(), anyInt())).thenReturn(sharedPreferences);
-    when(context.getPackageName()).thenReturn("org.thoughtcrime.securesms");
+    when(context.getPackageName()).thenReturn("com.zamzam.chat");
   }
 }

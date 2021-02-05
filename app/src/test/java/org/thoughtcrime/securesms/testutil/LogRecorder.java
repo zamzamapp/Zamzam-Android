@@ -1,6 +1,6 @@
-package org.thoughtcrime.securesms.testutil;
+package com.zamzam.chat.testutil;
 
-import org.thoughtcrime.securesms.logging.Log;
+import com.zamzam.chat.logging.Log;
 
 import java.util.ArrayList;
 import java.util.List;

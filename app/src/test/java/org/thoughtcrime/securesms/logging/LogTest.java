@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.logging;
+package com.zamzam.chat.logging;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.util;
+package com.zamzam.chat.util;
 
 import androidx.annotation.NonNull;
 

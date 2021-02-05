@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.util;
+package com.zamzam.chat.util;
 
 import android.app.Application;
 import android.content.ContentValues;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.thoughtcrime.securesms.conversation.ConversationItem
+<com.zamzam.chat.conversation.ConversationItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -41,7 +41,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignBottom="@id/body_bubble">
 
-            <org.thoughtcrime.securesms.components.AvatarImageView
+            <com.zamzam.chat.components.AvatarImageView
                 android:id="@+id/contact_photo"
                 android:foreground="@drawable/contact_photo_background"
                 android:layout_width="@dimen/conversation_item_avatar_size"
@@ -52,7 +52,7 @@
 
         </FrameLayout>
 
-        <org.thoughtcrime.securesms.conversation.ConversationItemBodyBubble
+        <com.zamzam.chat.conversation.ConversationItemBodyBubble
             android:id="@+id/body_bubble"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
 
             </LinearLayout>
 
-            <org.thoughtcrime.securesms.components.emoji.EmojiTextView
+            <com.zamzam.chat.components.emoji.EmojiTextView
                 android:id="@+id/conversation_item_body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
                 app:emoji_maxLength="1000"
                 tools:text="Mango pickle lorem ipsum"/>
 
-            <org.thoughtcrime.securesms.components.ConversationItemFooter
+            <com.zamzam.chat.components.ConversationItemFooter
                 android:id="@+id/conversation_item_footer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
                 app:footer_text_color="?conversation_item_received_text_secondary_color"
                 app:footer_icon_color="?conversation_item_received_text_secondary_color"/>
 
-            <org.thoughtcrime.securesms.components.ConversationItemFooter
+            <com.zamzam.chat.components.ConversationItemFooter
                 android:id="@+id/conversation_item_sticker_footer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -151,9 +151,9 @@
                 app:footer_text_color="?conversation_sticker_footer_text_color"
                 app:footer_icon_color="?conversation_sticker_footer_icon_color"/>
 
-        </org.thoughtcrime.securesms.conversation.ConversationItemBodyBubble>
+        </com.zamzam.chat.conversation.ConversationItemBodyBubble>
 
-        <org.thoughtcrime.securesms.components.AlertView
+        <com.zamzam.chat.components.AlertView
             android:id="@+id/indicators_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -161,7 +161,7 @@
             android:orientation="vertical"
             android:gravity="center_vertical"/>
 
-        <org.thoughtcrime.securesms.reactions.ReactionsConversationView
+        <com.zamzam.chat.reactions.ReactionsConversationView
             android:id="@+id/reactions_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,4 +172,4 @@
             app:rcv_outgoing="false"/>
 
     </RelativeLayout>
-</org.thoughtcrime.securesms.conversation.ConversationItem>
+</com.zamzam.chat.conversation.ConversationItem>

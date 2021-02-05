@@ -6,6 +6,6 @@
     <changeImageTransform />
     <changeBounds />
 
-    <transition class="org.thoughtcrime.securesms.animation.transitions.SquareToCircleImageViewTransition" />
+    <transition class="com.zamzam.chat.animation.transitions.SquareToCircleImageViewTransition" />
 
 </transitionSet>

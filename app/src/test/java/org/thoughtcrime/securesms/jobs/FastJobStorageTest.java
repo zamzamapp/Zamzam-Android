@@ -1,22 +1,21 @@
-package org.thoughtcrime.securesms.jobs;
+package com.zamzam.chat.jobs;
 
 import androidx.annotation.NonNull;
 
 import com.annimon.stream.Stream;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.database.JobDatabase;
-import org.thoughtcrime.securesms.jobmanager.Data;
-import org.thoughtcrime.securesms.jobmanager.Job;
-import org.thoughtcrime.securesms.jobmanager.impl.JsonDataSerializer;
-import org.thoughtcrime.securesms.jobmanager.persistence.ConstraintSpec;
-import org.thoughtcrime.securesms.jobmanager.persistence.DependencySpec;
-import org.thoughtcrime.securesms.jobmanager.persistence.FullSpec;
-import org.thoughtcrime.securesms.jobmanager.persistence.JobSpec;
-import org.thoughtcrime.securesms.testutil.DirectExecutor;
+import com.zamzam.chat.database.JobDatabase;
+import com.zamzam.chat.jobmanager.Data;
+import com.zamzam.chat.jobmanager.Job;
+import com.zamzam.chat.jobmanager.impl.JsonDataSerializer;
+import com.zamzam.chat.jobmanager.persistence.ConstraintSpec;
+import com.zamzam.chat.jobmanager.persistence.DependencySpec;
+import com.zamzam.chat.jobmanager.persistence.FullSpec;
+import com.zamzam.chat.jobmanager.persistence.JobSpec;
+import com.zamzam.chat.testutil.DirectExecutor;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

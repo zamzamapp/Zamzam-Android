@@ -1,8 +1,8 @@
-package org.thoughtcrime.securesms.registration.v2;
+package com.zamzam.chat.registration.v2;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.registration.v2.testdata.PinValidityVector;
-import org.thoughtcrime.securesms.util.Util;
+import com.zamzam.chat.registration.v2.testdata.PinValidityVector;
+import com.zamzam.chat.util.Util;
 import org.whispersystems.signalservice.internal.registrationpin.PinValidityChecker;
 import org.whispersystems.signalservice.internal.util.JsonUtil;
 

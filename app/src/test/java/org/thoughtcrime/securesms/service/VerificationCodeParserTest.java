@@ -1,8 +1,8 @@
-package org.thoughtcrime.securesms.service;
+package com.zamzam.chat.service;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.thoughtcrime.securesms.BaseUnitTest;
+import com.zamzam.chat.BaseUnitTest;
 import org.whispersystems.libsignal.util.guava.Optional;
 
 import java.util.Arrays;

@@ -1,7 +1,7 @@
-package org.thoughtcrime.securesms.contacts;
+package com.zamzam.chat.contacts;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.recipients.RecipientId;
+import com.zamzam.chat.recipients.RecipientId;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;

@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:parentTag="org.thoughtcrime.securesms.components.webrtc.WebRtcCallView">
+    tools:parentTag="com.zamzam.chat.components.webrtc.WebRtcCallView">
 
     <View
         android:id="@+id/call_screen_blur_overlay"
@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:background="@color/transparent_black_40" />
 
-    <org.thoughtcrime.securesms.components.AvatarImageView
+    <com.zamzam.chat.components.AvatarImageView
         android:id="@+id/call_screen_recipient_avatar"
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -75,7 +75,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             tools:visibility="visible" />
 
-        <org.thoughtcrime.securesms.util.views.TouchInterceptingFrameLayout
+        <com.zamzam.chat.util.views.TouchInterceptingFrameLayout
             android:id="@+id/call_screen_pip_area"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -105,7 +105,7 @@
                     android:layout_height="match_parent" />
 
             </androidx.cardview.widget.CardView>
-        </org.thoughtcrime.securesms.util.views.TouchInterceptingFrameLayout>
+        </com.zamzam.chat.util.views.TouchInterceptingFrameLayout>
 
         <ImageView
             android:id="@+id/call_screen_down_arrow"
@@ -116,7 +116,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/call_screen_recipient_name" />
 
-        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
+        <com.zamzam.chat.components.emoji.EmojiTextView
             android:id="@+id/call_screen_recipient_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
             app:layout_constraintTop_toBottomOf="@id/call_screen_recipient_name"
             tools:text="Signal Calling..." />
 
-        <org.thoughtcrime.securesms.components.webrtc.WebRtcAudioOutputToggleButton
+        <com.zamzam.chat.components.webrtc.WebRtcAudioOutputToggleButton
             android:id="@+id/call_screen_speaker_toggle"
             android:layout_width="56dp"
             android:layout_height="56dp"
@@ -179,7 +179,7 @@
             app:srcCompat="@drawable/webrtc_call_screen_camera_toggle"
             tools:visibility="visible" />
 
-        <org.thoughtcrime.securesms.components.AccessibleToggleButton
+        <com.zamzam.chat.components.AccessibleToggleButton
             android:id="@+id/call_screen_video_toggle"
             style="@style/WebRtcCallV2CompoundButton"
             android:layout_marginEnd="16dp"
@@ -194,7 +194,7 @@
             tools:checked="true"
             tools:visibility="visible" />
 
-        <org.thoughtcrime.securesms.components.AccessibleToggleButton
+        <com.zamzam.chat.components.AccessibleToggleButton
             android:id="@+id/call_screen_audio_mic_toggle"
             style="@style/WebRtcCallV2CompoundButton"
             android:layout_marginEnd="16dp"

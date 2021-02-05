@@ -8,7 +8,7 @@
     android:clickable="true"
     android:focusable="true">
 
-    <org.thoughtcrime.securesms.components.AvatarImageView
+    <com.zamzam.chat.components.AvatarImageView
         android:id="@+id/recipient_avatar"
         android:layout_width="48dp"
         android:layout_height="48dp"

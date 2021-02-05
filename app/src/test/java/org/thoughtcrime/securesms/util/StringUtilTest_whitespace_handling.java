@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.util;
+package com.zamzam.chat.util;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

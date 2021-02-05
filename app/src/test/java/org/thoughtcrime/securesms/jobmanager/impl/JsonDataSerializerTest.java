@@ -1,8 +1,8 @@
-package org.thoughtcrime.securesms.jobmanager.impl;
+package com.zamzam.chat.jobmanager.impl;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.jobmanager.Data;
-import org.thoughtcrime.securesms.util.Util;
+import com.zamzam.chat.jobmanager.Data;
+import com.zamzam.chat.util.Util;
 
 import java.io.IOException;
 

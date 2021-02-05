@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:theme="@style/Theme.Signal.RoundedBottomSheet.Light">
 
-    <org.thoughtcrime.securesms.components.AvatarImageView
+    <com.zamzam.chat.components.AvatarImageView
         android:id="@+id/rbs_recipient_avatar"
         android:layout_width="96dp"
         android:layout_height="96dp"

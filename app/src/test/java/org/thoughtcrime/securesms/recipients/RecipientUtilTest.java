@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.recipients;
+package com.zamzam.chat.recipients;
 
 import android.content.Context;
 
@@ -8,12 +8,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
-import org.thoughtcrime.securesms.database.DatabaseFactory;
-import org.thoughtcrime.securesms.database.MmsSmsDatabase;
-import org.thoughtcrime.securesms.database.RecipientDatabase;
-import org.thoughtcrime.securesms.database.ThreadDatabase;
-import org.thoughtcrime.securesms.dependencies.ApplicationDependencies;
-import org.thoughtcrime.securesms.util.FeatureFlags;
+import com.zamzam.chat.database.DatabaseFactory;
+import com.zamzam.chat.database.MmsSmsDatabase;
+import com.zamzam.chat.database.RecipientDatabase;
+import com.zamzam.chat.database.ThreadDatabase;
+import com.zamzam.chat.util.FeatureFlags;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

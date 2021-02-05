@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.profiles;
+package com.zamzam.chat.profiles;
 
 import org.junit.Test;
 

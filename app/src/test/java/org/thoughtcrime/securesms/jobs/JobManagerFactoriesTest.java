@@ -1,9 +1,9 @@
-package org.thoughtcrime.securesms.jobs;
+package com.zamzam.chat.jobs;
 
 import android.app.Application;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.jobmanager.Job;
+import com.zamzam.chat.jobmanager.Job;
 
 import java.util.Map;
 

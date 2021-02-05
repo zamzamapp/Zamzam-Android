@@ -1,15 +1,13 @@
-package org.thoughtcrime.securesms.contacts.sync;
+package com.zamzam.chat.contacts.sync;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.contacts.sync.FuzzyPhoneNumberHelper.InputResult;
-import org.thoughtcrime.securesms.contacts.sync.FuzzyPhoneNumberHelper.OutputResult;
-import org.thoughtcrime.securesms.contacts.sync.FuzzyPhoneNumberHelper.OutputResultV2;
+import com.zamzam.chat.contacts.sync.FuzzyPhoneNumberHelper.InputResult;
+import com.zamzam.chat.contacts.sync.FuzzyPhoneNumberHelper.OutputResult;
+import com.zamzam.chat.contacts.sync.FuzzyPhoneNumberHelper.OutputResultV2;
 import org.whispersystems.signalservice.api.util.UuidUtil;
 
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
@@ -17,7 +15,7 @@ import edu.emory.mathcs.backport.java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.mapOf;
+import static com.zamzam.chat.testutil.TestHelpers.mapOf;
 
 public class FuzzyPhoneNumberHelperTest {
 

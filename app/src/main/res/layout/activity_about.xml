@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textDirection="anyRtl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+
+                <TextView
+                    android:id="@+id/versionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableStart="@mipmap/ic_launcher_1"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textIsSelectable="true"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="@string/preferences__about_by_signal"
+                    />
+
+                <TextView
+                    android:id="@+id/aboutLicenseInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/preferences__about_signal_license"
+                    android:textAlignment="center"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/aboutWebsiteInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/preferences__about_project_site"
+                    android:textAlignment="center"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/aboutBugsFeaturesInfoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/preferences__about_bug_feature_request_site"
+                    android:textAlignment="center"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/tuskyProfileButton"-->
+<!--                    style="@style/Button.Registration"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    android:lineSpacingMultiplier="1.2"-->
+<!--                    android:text="@string/preferences__about_signal_account"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/aboutLicensesButton"-->
+<!--                    style="@style/Button.Registration"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:lineSpacingMultiplier="1.2"-->
+<!--                    android:text="@string/title_licenses"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textSize="16sp" />-->
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

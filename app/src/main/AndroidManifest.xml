@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="org.thoughtcrime.securesms">
+          package="com.zamzam.chat">
 
     <uses-sdk tools:overrideLibrary="androidx.camera.core,androidx.camera.camera2,androidx.camera.lifecycle" />
 
-    <permission android:name="org.thoughtcrime.securesms.ACCESS_SECRETS"
+    <permission android:name="com.zamzam.chat.ACCESS_SECRETS"
                 android:label="Access to TextSecure Secrets"
                 android:protectionLevel="signature" />
 
@@ -20,7 +20,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
-    <uses-permission android:name="org.thoughtcrime.securesms.ACCESS_SECRETS"/>
+    <uses-permission android:name="com.zamzam.chat.ACCESS_SECRETS"/>
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.WRITE_PROFILE"/>
     <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"
@@ -90,7 +90,7 @@
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
 
-    <application android:name=".ApplicationContext"
+    <application android:name="com.zamzam.chat.ApplicationContext"
                  android:icon="@mipmap/ic_launcher"
                  android:label="@string/app_name"
                  android:supportsRtl="true"
@@ -101,7 +101,7 @@
 
     <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCSx9xea86GwDKGznCAULE9Y5a8b-TfN9U"/>
+            android:value="AIzaSyAWXKXXg6YBSwbpnaA1HdeP_klUy8ZoEMo"/>
 
     <meta-data android:name="com.google.android.gms.version"
                android:value="@integer/google_play_services_version" />
@@ -113,7 +113,7 @@
     <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
     <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false" />
 
-    <activity android:name="org.thoughtcrime.securesms.WebRtcCallActivity"
+    <activity android:name="com.zamzam.chat.WebRtcCallActivity"
               android:theme="@style/TextSecure.LightTheme.WebRTCCall"
               android:excludeFromRecents="true"
               android:screenOrientation="portrait"
@@ -123,28 +123,28 @@
               android:taskAffinity=".calling"
               android:launchMode="singleTask"/>
 
-    <activity android:name=".messagerequests.CalleeMustAcceptMessageRequestActivity"
+    <activity android:name="com.zamzam.chat.messagerequests.CalleeMustAcceptMessageRequestActivity"
               android:theme="@style/TextSecure.DarkNoActionBar"
               android:screenOrientation="portrait"
               android:noHistory="true"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".InviteActivity"
+    <activity android:name="com.zamzam.chat.InviteActivity"
               android:theme="@style/Signal.Light.NoActionBar.Invite"
               android:windowSoftInputMode="stateHidden"
-              android:parentActivityName=".MainActivity"
+              android:parentActivityName="com.zamzam.chat.MainActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="org.thoughtcrime.securesms.MainActivity" />
+            android:value="com.zamzam.chat.MainActivity" />
     </activity>
 
-    <activity android:name=".PromptMmsActivity"
+    <activity android:name="com.zamzam.chat.PromptMmsActivity"
               android:label="Configure MMS Settings"
               android:windowSoftInputMode="stateUnchanged"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".DeviceProvisioningActivity"
+    <activity android:name="com.zamzam.chat.DeviceProvisioningActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
@@ -154,10 +154,10 @@
         </intent-filter>
     </activity>
 
-    <activity android:name=".preferences.MmsPreferencesActivity"
+    <activity android:name="com.zamzam.chat.preferences.MmsPreferencesActivity"
                android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".sharing.ShareActivity"
+    <activity android:name="com.zamzam.chat.sharing.ShareActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:excludeFromRecents="true"
               android:launchMode="singleTask"
@@ -190,7 +190,7 @@
 
     </activity>
 
-    <activity android:name=".stickers.StickerPackPreviewActivity"
+    <activity android:name="com.zamzam.chat.stickers.StickerPackPreviewActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:launchMode="singleTask"
               android:noHistory="true"
@@ -214,7 +214,7 @@
     </activity>
 
     <activity-alias android:name=".RoutingActivity"
-                    android:targetActivity=".MainActivity"
+                    android:targetActivity="com.zamzam.chat.MainActivity"
                     android:exported="true">
 
         <intent-filter>
@@ -230,19 +230,19 @@
 
     </activity-alias>
 
-    <activity android:name=".conversation.ConversationActivity"
+    <activity android:name="com.zamzam.chat.conversation.ConversationActivity"
               android:windowSoftInputMode="stateUnchanged"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
-              android:parentActivityName=".MainActivity">
+              android:parentActivityName="com.zamzam.chat.MainActivity">
         <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.thoughtcrime.securesms.MainActivity" />
+                android:value="com.zamzam.chat.MainActivity" />
     </activity>
 
-    <activity android:name=".longmessage.LongMessageActivity" />
+    <activity android:name="com.zamzam.chat.longmessage.LongMessageActivity" />
 
-    <activity android:name=".conversation.ConversationPopupActivity"
+    <activity android:name="com.zamzam.chat.conversation.ConversationPopupActivity"
               android:windowSoftInputMode="stateVisible"
               android:launchMode="singleTask"
               android:taskAffinity=""
@@ -250,75 +250,75 @@
               android:theme="@style/TextSecure.LightTheme.Popup"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
 
-    <activity android:name=".messagedetails.MessageDetailsActivity"
+    <activity android:name="com.zamzam.chat.messagedetails.MessageDetailsActivity"
               android:label="@string/AndroidManifest__message_details"
               android:windowSoftInputMode="stateHidden"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".groups.ui.pendingmemberinvites.PendingMemberInvitesActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.pendingmemberinvites.PendingMemberInvitesActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar" />
 
-    <activity android:name=".groups.ui.managegroup.ManageGroupActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.managegroup.ManageGroupActivity"
               android:windowSoftInputMode="stateAlwaysHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".recipients.ui.managerecipient.ManageRecipientActivity"
+    <activity android:name="com.zamzam.chat.recipients.ui.managerecipient.ManageRecipientActivity"
               android:windowSoftInputMode="stateAlwaysHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".DatabaseMigrationActivity"
+    <activity android:name="com.zamzam.chat.DatabaseMigrationActivity"
               android:theme="@style/NoAnimation.Theme.AppCompat.Light.DarkActionBar"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".migrations.ApplicationMigrationActivity"
+    <activity android:name="com.zamzam.chat.migrations.ApplicationMigrationActivity"
               android:theme="@style/NoAnimation.Theme.AppCompat.Light.DarkActionBar"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-      <activity android:name=".PassphraseCreateActivity"
+      <activity android:name="com.zamzam.chat.PassphraseCreateActivity"
               android:label="@string/AndroidManifest__create_passphrase"
               android:windowSoftInputMode="stateUnchanged"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".PassphrasePromptActivity"
+    <activity android:name="com.zamzam.chat.PassphrasePromptActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.LightIntroTheme"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".NewConversationActivity"
+    <activity android:name="com.zamzam.chat.NewConversationActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:windowSoftInputMode="stateAlwaysVisible"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".PushContactSelectionActivity"
+    <activity android:name="com.zamzam.chat.PushContactSelectionActivity"
           android:label="@string/AndroidManifest__select_contacts"
           android:windowSoftInputMode="stateHidden"
           android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".giph.ui.GiphyActivity"
+    <activity android:name="com.zamzam.chat.giph.ui.GiphyActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:windowSoftInputMode="stateHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".mediasend.MediaSendActivity"
+    <activity android:name="com.zamzam.chat.mediasend.MediaSendActivity"
               android:theme="@style/TextSecure.FullScreenMedia"
               android:windowSoftInputMode="stateHidden"
               android:launchMode="singleTop"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".PassphraseChangeActivity"
+    <activity android:name="com.zamzam.chat.PassphraseChangeActivity"
               android:label="@string/AndroidManifest__change_passphrase"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".VerifyIdentityActivity"
+    <activity android:name="com.zamzam.chat.VerifyIdentityActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".ApplicationPreferencesActivity"
+    <activity android:name="com.zamzam.chat.ApplicationPreferencesActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -326,51 +326,51 @@
         </intent-filter>
     </activity>
 
-    <activity android:name=".registration.RegistrationNavigationActivity"
+    <activity android:name="com.zamzam.chat.registration.RegistrationNavigationActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.LightRegistrationTheme"
               android:windowSoftInputMode="stateUnchanged"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".revealable.ViewOnceMessageActivity"
+    <activity android:name="com.zamzam.chat.revealable.ViewOnceMessageActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.FullScreenMedia"
               android:windowSoftInputMode="stateHidden"
               android:excludeFromRecents="true"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".stickers.StickerManagementActivity"
+    <activity android:name="com.zamzam.chat.stickers.StickerManagementActivity"
               android:launchMode="singleTask"
               android:theme="@style/TextSecure.LightTheme"
               android:windowSoftInputMode="stateUnchanged"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-     <activity android:name=".DeviceActivity"
+     <activity android:name="com.zamzam.chat.DeviceActivity"
                android:label="@string/AndroidManifest__linked_devices"
                android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".logsubmit.SubmitDebugLogActivity"
+    <activity android:name="com.zamzam.chat.logsubmit.SubmitDebugLogActivity"
               android:label="@string/AndroidManifest__log_submit"
               android:windowSoftInputMode="stateHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".MediaPreviewActivity"
+    <activity android:name="com.zamzam.chat.MediaPreviewActivity"
               android:label="@string/AndroidManifest__media_preview"
               android:windowSoftInputMode="stateHidden"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".AvatarPreviewActivity"
+    <activity android:name="com.zamzam.chat.AvatarPreviewActivity"
               android:label="@string/AndroidManifest__media_preview"
               android:windowSoftInputMode="stateHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".mediaoverview.MediaOverviewActivity"
+    <activity android:name="com.zamzam.chat.mediaoverview.MediaOverviewActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:windowSoftInputMode="stateHidden"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".DummyActivity"
+    <activity android:name="com.zamzam.chat.DummyActivity"
               android:theme="@android:style/Theme.NoDisplay"
               android:enabled="true"
               android:allowTaskReparenting="true"
@@ -381,11 +381,11 @@
               android:clearTaskOnLaunch="true"
               android:finishOnTaskLaunch="true" />
 
-    <activity android:name=".PlayServicesProblemActivity"
+    <activity android:name="com.zamzam.chat.PlayServicesProblemActivity"
               android:theme="@style/TextSecure.DialogActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".SmsSendtoActivity">
+    <activity android:name="com.zamzam.chat.SmsSendtoActivity">
         <intent-filter>
             <action android:name="android.intent.action.SENDTO" />
             <action android:name="android.intent.action.VIEW" />
@@ -399,11 +399,11 @@
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
-            <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.contact" />
+            <data android:mimeType="vnd.android.cursor.item/vnd.com.zamzam.chat.contact" />
         </intent-filter>
     </activity>
 
-    <activity android:name="org.thoughtcrime.securesms.webrtc.VoiceCallShare"
+    <activity android:name="com.zamzam.chat.webrtc.VoiceCallShare"
               android:excludeFromRecents="true"
               android:theme="@style/NoAnimation.Theme.BlackScreen"
               android:launchMode="singleTask"
@@ -412,107 +412,107 @@
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
-            <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.call" />
+            <data android:mimeType="vnd.android.cursor.item/vnd.com.zamzam.chat.call" />
         </intent-filter>
 
     </activity>
 
-    <activity android:name=".mediasend.AvatarSelectionActivity"
+    <activity android:name="com.zamzam.chat.mediasend.AvatarSelectionActivity"
               android:theme="@style/TextSecure.FullScreenMedia"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".BlockedContactsActivity"
+    <activity android:name="com.zamzam.chat.BlockedContactsActivity"
               android:theme="@style/TextSecure.LightTheme"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".scribbles.ImageEditorStickerSelectActivity"
+    <activity android:name="com.zamzam.chat.scribbles.ImageEditorStickerSelectActivity"
               android:theme="@style/TextSecure.DarkTheme"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".profiles.edit.EditProfileActivity"
+    <activity android:name="com.zamzam.chat.profiles.edit.EditProfileActivity"
               android:theme="@style/TextSecure.LightRegistrationTheme"
               android:windowSoftInputMode="stateVisible|adjustResize" />
 
-    <activity android:name=".lock.v2.CreateKbsPinActivity"
+    <activity android:name="com.zamzam.chat.lock.v2.CreateKbsPinActivity"
             android:theme="@style/TextSecure.LightRegistrationTheme"
             android:windowSoftInputMode="adjustResize"
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".lock.v2.KbsMigrationActivity"
+    <activity android:name="com.zamzam.chat.lock.v2.KbsMigrationActivity"
             android:theme="@style/TextSecure.LightRegistrationTheme"
             android:windowSoftInputMode="adjustResize"
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".ClearProfileAvatarActivity"
+    <activity android:name="com.zamzam.chat.ClearProfileAvatarActivity"
             android:theme="@style/Theme.AppCompat.Dialog.Alert"
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:icon="@drawable/clear_profile_avatar"
             android:label="@string/AndroidManifest_remove_photo">
 
         <intent-filter>
-            <action android:name="org.thoughtcrime.securesms.action.CLEAR_PROFILE_PHOTO"/>
+            <action android:name="com.zamzam.chat.action.CLEAR_PROFILE_PHOTO"/>
             <category android:name="android.intent.category.DEFAULT"/>
         </intent-filter>
     </activity>
 
-    <activity android:name=".messagerequests.MessageRequestMegaphoneActivity"
+    <activity android:name="com.zamzam.chat.messagerequests.MessageRequestMegaphoneActivity"
               android:theme="@style/TextSecure.LightRegistrationTheme"
               android:windowSoftInputMode="adjustResize"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".contactshare.ContactShareEditActivity"
+    <activity android:name="com.zamzam.chat.contactshare.ContactShareEditActivity"
               android:theme="@style/TextSecure.LightTheme"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".contactshare.ContactNameEditActivity"
+    <activity android:name="com.zamzam.chat.contactshare.ContactNameEditActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".contactshare.SharedContactDetailsActivity"
+    <activity android:name="com.zamzam.chat.contactshare.SharedContactDetailsActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".ShortcutLauncherActivity"
+    <activity android:name="com.zamzam.chat.ShortcutLauncherActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:exported="true"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
     <activity
-            android:name=".maps.PlacePickerActivity"
+            android:name="com.zamzam.chat.maps.PlacePickerActivity"
             android:label="@string/PlacePickerActivity_title"
             android:theme="@style/Theme.Signal.DayNight.NoActionBar"
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-    <activity android:name=".MainActivity"
+    <activity android:name="com.zamzam.chat.MainActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:launchMode="singleTask"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
 
-    <activity android:name=".pin.PinRestoreActivity"
+    <activity android:name="com.zamzam.chat.pin.PinRestoreActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
 
-    <activity android:name=".groups.ui.creategroup.CreateGroupActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.creategroup.CreateGroupActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar" />
 
-    <activity android:name=".groups.ui.addtogroup.AddToGroupsActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.addtogroup.AddToGroupsActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar" />
 
-    <activity android:name=".groups.ui.addmembers.AddMembersActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.addmembers.AddMembersActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar" />
 
-    <activity android:name=".groups.ui.creategroup.details.AddGroupDetailsActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.creategroup.details.AddGroupDetailsActivity"
               android:theme="@style/Theme.Signal.DayNight.NoActionBar" />
 
-    <activity android:name=".groups.ui.chooseadmin.ChooseNewAdminActivity"
+    <activity android:name="com.zamzam.chat.groups.ui.chooseadmin.ChooseNewAdminActivity"
               android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
 
-    <service android:enabled="true" android:name="org.thoughtcrime.securesms.service.WebRtcCallService"/>
-    <service android:enabled="true" android:name=".service.ApplicationMigrationService"/>
-    <service android:enabled="true" android:exported="false" android:name=".service.KeyCachingService"/>
-    <service android:enabled="true" android:name=".messages.IncomingMessageObserver$ForegroundService"/>
+    <service android:enabled="true" android:name="com.zamzam.chat.service.WebRtcCallService"/>
+    <service android:enabled="true" android:name="com.zamzam.chat.service.ApplicationMigrationService"/>
+    <service android:enabled="true" android:exported="false" android:name="com.zamzam.chat.service.KeyCachingService"/>
+    <service android:enabled="true" android:name="com.zamzam.chat.messages.IncomingMessageObserver$ForegroundService"/>
 
-    <service android:name=".service.QuickResponseService"
+    <service android:name="com.zamzam.chat.service.QuickResponseService"
              android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
              android:exported="true" >
         <intent-filter>
@@ -525,14 +525,14 @@
         </intent-filter>
     </service>
 
-    <service android:name=".service.AccountAuthenticatorService" android:exported="true">
+    <service android:name="com.zamzam.chat.service.AccountAuthenticatorService" android:exported="true">
         <intent-filter>
             <action android:name="android.accounts.AccountAuthenticator" />
         </intent-filter>
         <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
     </service>
 
-    <service android:name=".service.ContactsSyncAdapterService" android:exported="true">
+    <service android:name="com.zamzam.chat.service.ContactsSyncAdapterService" android:exported="true">
         <intent-filter>
             <action android:name="android.content.SyncAdapter"/>
         </intent-filter>
@@ -540,24 +540,24 @@
         <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contactsformat" />
     </service>
 
-    <service android:name=".service.DirectShareService"
+    <service android:name="com.zamzam.chat.service.DirectShareService"
              android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
         <intent-filter>
             <action android:name="android.service.chooser.ChooserTargetService" />
         </intent-filter>
     </service>
 
-    <service android:name=".service.GenericForegroundService"/>
+    <service android:name="com.zamzam.chat.service.GenericForegroundService"/>
 
-    <service android:name=".gcm.FcmFetchService" />
+    <service android:name="com.zamzam.chat.gcm.FcmFetchService" />
 
-    <service android:name=".gcm.FcmReceiveService">
+    <service android:name="com.zamzam.chat.gcm.FcmReceiveService">
         <intent-filter>
             <action android:name="com.google.firebase.MESSAGING_EVENT" />
         </intent-filter>
     </service>
 
-    <receiver android:name=".service.SmsListener"
+    <receiver android:name="com.zamzam.chat.service.SmsListener"
               android:permission="android.permission.BROADCAST_SMS"
               android:enabled="true"
               android:exported="true">
@@ -569,14 +569,14 @@
              </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.SmsDeliveryListener"
+    <receiver android:name="com.zamzam.chat.service.SmsDeliveryListener"
               android:exported="true">
         <intent-filter>
-            <action android:name="org.thoughtcrime.securesms.services.MESSAGE_SENT"/>
+            <action android:name="com.zamzam.chat.services.MESSAGE_SENT"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.MmsListener"
+    <receiver android:name="com.zamzam.chat.service.MmsListener"
               android:enabled="true"
               android:exported="true"
               android:permission="android.permission.BROADCAST_WAP_PUSH">
@@ -590,52 +590,52 @@
              </intent-filter>
     </receiver>
 
-    <receiver android:name=".notifications.MarkReadReceiver"
+    <receiver android:name="com.zamzam.chat.notifications.MarkReadReceiver"
               android:enabled="true"
               android:exported="false">
         <intent-filter>
-            <action android:name="org.thoughtcrime.securesms.notifications.CLEAR"/>
+            <action android:name="com.zamzam.chat.notifications.CLEAR"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".notifications.RemoteReplyReceiver"
+    <receiver android:name="com.zamzam.chat.notifications.RemoteReplyReceiver"
               android:enabled="true"
               android:exported="false">
         <intent-filter>
-            <action android:name="org.thoughtcrime.securesms.notifications.WEAR_REPLY"/>
+            <action android:name="com.zamzam.chat.notifications.WEAR_REPLY"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".notifications.AndroidAutoHeardReceiver"
+    <receiver android:name="com.zamzam.chat.notifications.AndroidAutoHeardReceiver"
               android:exported="false">
         <intent-filter>
-          <action android:name="org.thoughtcrime.securesms.notifications.ANDROID_AUTO_HEARD"/>
+          <action android:name="com.zamzam.chat.notifications.ANDROID_AUTO_HEARD"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".notifications.AndroidAutoReplyReceiver"
+    <receiver android:name="com.zamzam.chat.notifications.AndroidAutoReplyReceiver"
               android:exported="false">
         <intent-filter>
-          <action android:name="org.thoughtcrime.securesms.notifications.ANDROID_AUTO_REPLY"/>
+          <action android:name="com.zamzam.chat.notifications.ANDROID_AUTO_REPLY"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.ExpirationListener" />
+    <receiver android:name="com.zamzam.chat.service.ExpirationListener" />
 
-    <receiver android:name=".revealable.ViewOnceMessageManager$ViewOnceAlarm" />
+    <receiver android:name="com.zamzam.chat.revealable.ViewOnceMessageManager$ViewOnceAlarm" />
 
-    <provider android:name=".providers.PartProvider"
+    <provider android:name="com.zamzam.chat.providers.PartProvider"
               android:grantUriPermissions="true"
               android:exported="false"
               android:authorities="org.thoughtcrime.provider.securesms" />
 
-    <provider android:name=".providers.MmsBodyProvider"
+    <provider android:name="com.zamzam.chat.providers.MmsBodyProvider"
               android:grantUriPermissions="true"
               android:exported="false"
               android:authorities="org.thoughtcrime.provider.securesms.mms" />
 
     <provider android:name="androidx.core.content.FileProvider"
-              android:authorities="org.thoughtcrime.securesms.fileprovider"
+              android:authorities="com.zamzam.chat.fileprovider"
               android:exported="false"
               android:grantUriPermissions="true">
 
@@ -643,79 +643,79 @@
 
     </provider>
 
-    <provider android:name=".database.DatabaseContentProviders$Conversation"
-              android:authorities="org.thoughtcrime.securesms.database.conversation"
+    <provider android:name="com.zamzam.chat.database.DatabaseContentProviders$Conversation"
+              android:authorities="com.zamzam.chat.database.conversation"
               android:exported="false" />
 
-    <provider android:name=".database.DatabaseContentProviders$ConversationList"
-              android:authorities="org.thoughtcrime.securesms.database.conversationlist"
+    <provider android:name="com.zamzam.chat.database.DatabaseContentProviders$ConversationList"
+              android:authorities="com.zamzam.chat.database.conversationlist"
               android:exported="false" />
 
-    <provider android:name=".database.DatabaseContentProviders$Attachment"
-              android:authorities="org.thoughtcrime.securesms.database.attachment"
+    <provider android:name="com.zamzam.chat.database.DatabaseContentProviders$Attachment"
+              android:authorities="com.zamzam.chat.database.attachment"
               android:exported="false" />
 
-    <provider android:name=".database.DatabaseContentProviders$Sticker"
-              android:authorities="org.thoughtcrime.securesms.database.sticker"
+    <provider android:name="com.zamzam.chat.database.DatabaseContentProviders$Sticker"
+              android:authorities="com.zamzam.chat.database.sticker"
               android:exported="false" />
 
-    <provider android:name=".database.DatabaseContentProviders$StickerPack"
-              android:authorities="org.thoughtcrime.securesms.database.stickerpack"
+    <provider android:name="com.zamzam.chat.database.DatabaseContentProviders$StickerPack"
+              android:authorities="com.zamzam.chat.database.stickerpack"
               android:exported="false" />
 
-    <receiver android:name=".service.BootReceiver">
+    <receiver android:name="com.zamzam.chat.service.BootReceiver">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            <action android:name="org.thoughtcrime.securesms.RESTART"/>
+            <action android:name="com.zamzam.chat.RESTART"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.DirectoryRefreshListener">
+    <receiver android:name="com.zamzam.chat.service.DirectoryRefreshListener">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED" />
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.RotateSignedPreKeyListener">
+    <receiver android:name="com.zamzam.chat.service.RotateSignedPreKeyListener">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED" />
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.RotateSenderCertificateListener">
+    <receiver android:name="com.zamzam.chat.service.RotateSenderCertificateListener">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED" />
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.LocalBackupListener">
+    <receiver android:name="com.zamzam.chat.service.LocalBackupListener">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED" />
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".service.PersistentConnectionBootListener">
+    <receiver android:name="com.zamzam.chat.service.PersistentConnectionBootListener">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".notifications.LocaleChangedReceiver">
+    <receiver android:name="com.zamzam.chat.notifications.LocaleChangedReceiver">
         <intent-filter>
             <action android:name="android.intent.action.LOCALE_CHANGED"/>
         </intent-filter>
     </receiver>
 
-    <receiver android:name=".notifications.MessageNotifier$ReminderReceiver"/>
+    <receiver android:name="com.zamzam.chat.notifications.MessageNotifier$ReminderReceiver"/>
 
-    <receiver android:name=".notifications.DeleteNotificationReceiver">
+    <receiver android:name="com.zamzam.chat.notifications.DeleteNotificationReceiver">
         <intent-filter>
-            <action android:name="org.thoughtcrime.securesms.DELETE_NOTIFICATION"/>
+            <action android:name="com.zamzam.chat.DELETE_NOTIFICATION"/>
         </intent-filter>
     </receiver>
 
     <receiver
-        android:name=".service.PanicResponderListener"
+        android:name="com.zamzam.chat.service.PanicResponderListener"
         android:exported="true">
         <intent-filter>
             <action android:name="info.guardianproject.panic.action.TRIGGER" />
@@ -723,28 +723,28 @@
     </receiver>
 
     <service
-        android:name=".gcm.FcmJobService"
+        android:name="com.zamzam.chat.gcm.FcmJobService"
         android:permission="android.permission.BIND_JOB_SERVICE"
         android:enabled="@bool/enable_job_service"
         tools:targetApi="26" />
 
     <service
-        android:name=".jobmanager.JobSchedulerScheduler$SystemService"
+        android:name="com.zamzam.chat.jobmanager.JobSchedulerScheduler$SystemService"
         android:permission="android.permission.BIND_JOB_SERVICE"
         android:enabled="@bool/enable_job_service"
         tools:targetApi="26" />
 
     <service
-        android:name=".jobmanager.KeepAliveService"
+        android:name="com.zamzam.chat.jobmanager.KeepAliveService"
         android:enabled="@bool/enable_alarm_manager" />
 
     <receiver
-        android:name=".jobmanager.AlarmManagerScheduler$RetryReceiver"
+        android:name="com.zamzam.chat.jobmanager.AlarmManagerScheduler$RetryReceiver"
         android:enabled="@bool/enable_alarm_manager" />
 
     <!-- Probably don't need this one -->
     <receiver
-        android:name=".jobmanager.BootReceiver"
+        android:name="com.zamzam.chat.jobmanager.BootReceiver"
         android:enabled="true">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED" />

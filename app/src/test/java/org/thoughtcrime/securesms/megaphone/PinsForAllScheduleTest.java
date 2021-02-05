@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.megaphone;
+package com.zamzam.chat.megaphone;
 
 import android.app.Application;
 
@@ -8,14 +8,14 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
-import org.thoughtcrime.securesms.BaseUnitTest;
-import org.thoughtcrime.securesms.dependencies.ApplicationDependencies;
-import org.thoughtcrime.securesms.keyvalue.KbsValues;
-import org.thoughtcrime.securesms.keyvalue.RegistrationValues;
-import org.thoughtcrime.securesms.keyvalue.SignalStore;
-import org.thoughtcrime.securesms.logging.Log;
-import org.thoughtcrime.securesms.util.FeatureFlags;
-import org.thoughtcrime.securesms.util.TextSecurePreferences;
+import com.zamzam.chat.BaseUnitTest;
+import com.zamzam.chat.dependencies.ApplicationDependencies;
+import com.zamzam.chat.keyvalue.KbsValues;
+import com.zamzam.chat.keyvalue.RegistrationValues;
+import com.zamzam.chat.keyvalue.SignalStore;
+import com.zamzam.chat.logging.Log;
+import com.zamzam.chat.util.FeatureFlags;
+import com.zamzam.chat.util.TextSecurePreferences;
 
 import java.util.concurrent.TimeUnit;
 

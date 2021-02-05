@@ -1,9 +1,9 @@
-package org.thoughtcrime.securesms.testutil;
+package com.zamzam.chat.testutil;
 
 import com.annimon.stream.Stream;
 import com.google.common.collect.Sets;
 
-import org.thoughtcrime.securesms.util.Conversions;
+import com.zamzam.chat.util.Conversions;
 import org.whispersystems.libsignal.util.ByteUtil;
 
 import java.nio.ByteBuffer;

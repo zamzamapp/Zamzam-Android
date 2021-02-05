@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.storage;
+package com.zamzam.chat.storage;
 
 import androidx.annotation.NonNull;
 
@@ -11,11 +11,11 @@ import org.signal.zkgroup.groups.GroupMasterKey;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
-import org.thoughtcrime.securesms.logging.Log;
-import org.thoughtcrime.securesms.recipients.Recipient;
-import org.thoughtcrime.securesms.storage.StorageSyncHelper.KeyDifferenceResult;
-import org.thoughtcrime.securesms.storage.StorageSyncHelper.MergeResult;
-import org.thoughtcrime.securesms.util.FeatureFlags;
+import com.zamzam.chat.logging.Log;
+import com.zamzam.chat.recipients.Recipient;
+import com.zamzam.chat.storage.StorageSyncHelper.KeyDifferenceResult;
+import com.zamzam.chat.storage.StorageSyncHelper.MergeResult;
+import com.zamzam.chat.util.FeatureFlags;
 import org.whispersystems.libsignal.util.guava.Optional;
 import org.whispersystems.signalservice.api.push.SignalServiceAddress;
 import org.whispersystems.signalservice.api.storage.SignalAccountRecord;
@@ -41,11 +41,11 @@ import static org.junit.Assert.assertNotEquals;
 import static org.mockito.Mockito.when;
 import static org.powermock.api.mockito.PowerMockito.mock;
 import static org.powermock.api.mockito.PowerMockito.mockStatic;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.assertByteListEquals;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.assertContentsEqual;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.byteArray;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.byteListOf;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.setOf;
+import static com.zamzam.chat.testutil.TestHelpers.assertByteListEquals;
+import static com.zamzam.chat.testutil.TestHelpers.assertContentsEqual;
+import static com.zamzam.chat.testutil.TestHelpers.byteArray;
+import static com.zamzam.chat.testutil.TestHelpers.byteListOf;
+import static com.zamzam.chat.testutil.TestHelpers.setOf;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({ Recipient.class, FeatureFlags.class})

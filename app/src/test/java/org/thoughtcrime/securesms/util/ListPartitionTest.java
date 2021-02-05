@@ -1,7 +1,7 @@
-package org.thoughtcrime.securesms.util;
+package com.zamzam.chat.util;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.BaseUnitTest;
+import com.zamzam.chat.BaseUnitTest;
 
 import java.util.LinkedList;
 import java.util.List;

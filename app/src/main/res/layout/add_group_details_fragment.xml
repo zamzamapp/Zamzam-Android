@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-    <org.thoughtcrime.securesms.components.emoji.EmojiEditText
+    <com.zamzam.chat.components.emoji.EmojiEditText
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@id/mms_warning"
         app:layout_goneMarginTop="30dp" />
 
-    <org.thoughtcrime.securesms.groups.ui.GroupMemberListView
+    <com.zamzam.chat.groups.ui.GroupMemberListView
         android:id="@+id/member_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"

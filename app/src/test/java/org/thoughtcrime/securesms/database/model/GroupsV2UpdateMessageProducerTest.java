@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.database.model;
+package com.zamzam.chat.database.model;
 
 import android.app.Application;
 
@@ -27,9 +27,8 @@ import org.signal.storageservice.protos.groups.local.DecryptedPendingMember;
 import org.signal.storageservice.protos.groups.local.DecryptedPendingMemberRemoval;
 import org.signal.storageservice.protos.groups.local.DecryptedString;
 import org.signal.storageservice.protos.groups.local.DecryptedTimer;
-import org.thoughtcrime.securesms.testutil.MainThreadUtil;
-import org.thoughtcrime.securesms.util.StringUtil;
-import org.thoughtcrime.securesms.util.Util;
+import com.zamzam.chat.testutil.MainThreadUtil;
+import com.zamzam.chat.util.Util;
 import org.whispersystems.signalservice.api.util.UuidUtil;
 
 import java.util.Arrays;
@@ -44,7 +43,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.thoughtcrime.securesms.util.StringUtil.isolateBidi;
+import static com.zamzam.chat.util.StringUtil.isolateBidi;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(manifest = Config.NONE, application = Application.class)

@@ -15,12 +15,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.thoughtcrime.securesms.util;
+package com.zamzam.chat.util;
 
 import junit.framework.AssertionFailedError;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.BaseUnitTest;
+import com.zamzam.chat.BaseUnitTest;
 
 import java.net.URISyntaxException;
 

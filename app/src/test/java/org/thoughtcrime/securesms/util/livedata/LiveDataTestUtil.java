@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.util.livedata;
+package com.zamzam.chat.util.livedata;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;

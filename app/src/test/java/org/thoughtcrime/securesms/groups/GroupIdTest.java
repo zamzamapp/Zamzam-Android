@@ -1,10 +1,10 @@
-package org.thoughtcrime.securesms.groups;
+package com.zamzam.chat.groups;
 
 import org.junit.Test;
 import org.signal.zkgroup.InvalidInputException;
 import org.signal.zkgroup.groups.GroupIdentifier;
 import org.signal.zkgroup.groups.GroupMasterKey;
-import org.thoughtcrime.securesms.util.Hex;
+import com.zamzam.chat.util.Hex;
 
 import java.io.IOException;
 
@@ -16,8 +16,8 @@ import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
-import static org.thoughtcrime.securesms.groups.ZkGroupLibraryUtil.assumeZkGroupSupportedOnOS;
-import static org.thoughtcrime.securesms.testutil.SecureRandomTestUtil.mockRandom;
+import static com.zamzam.chat.groups.ZkGroupLibraryUtil.assumeZkGroupSupportedOnOS;
+import static com.zamzam.chat.testutil.SecureRandomTestUtil.mockRandom;
 
 public final class GroupIdTest {
 

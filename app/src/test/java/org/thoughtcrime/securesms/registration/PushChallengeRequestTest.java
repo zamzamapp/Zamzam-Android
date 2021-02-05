@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.registration;
+package com.zamzam.chat.registration;
 
 import android.app.Application;
 import android.os.AsyncTask;

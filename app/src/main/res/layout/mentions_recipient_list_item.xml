@@ -9,7 +9,7 @@
     android:gravity="center_vertical"
     android:background="?selectableItemBackground">
 
-    <org.thoughtcrime.securesms.components.AvatarImageView
+    <com.zamzam.chat.components.AvatarImageView
         android:id="@+id/mention_recipient_avatar"
         android:layout_width="28dp"
         android:layout_height="28dp"

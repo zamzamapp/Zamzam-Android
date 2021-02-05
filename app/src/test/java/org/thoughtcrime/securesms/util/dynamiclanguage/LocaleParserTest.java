@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.util.dynamiclanguage;
+package com.zamzam.chat.util.dynamiclanguage;
 
 import android.app.Application;
 
@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
-import org.thoughtcrime.securesms.BuildConfig;
+import com.zamzam.chat.BuildConfig;
 
 import java.util.Arrays;
 import java.util.List;

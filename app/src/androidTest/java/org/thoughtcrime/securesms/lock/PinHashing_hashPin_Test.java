@@ -1,7 +1,7 @@
-package org.thoughtcrime.securesms.lock;
+package com.zamzam.chat.lock;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.util.Hex;
+import com.zamzam.chat.util.Hex;
 import org.whispersystems.signalservice.api.kbs.HashedPin;
 import org.whispersystems.signalservice.api.kbs.KbsData;
 import org.whispersystems.signalservice.api.kbs.MasterKey;

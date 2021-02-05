@@ -1,12 +1,12 @@
-package org.thoughtcrime.securesms.recipients;
+package com.zamzam.chat.recipients;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.thoughtcrime.securesms.logging.Log;
-import org.thoughtcrime.securesms.testutil.LogRecorder;
+import com.zamzam.chat.logging.Log;
+import com.zamzam.chat.testutil.LogRecorder;
 import org.whispersystems.libsignal.util.guava.Optional;
 
 import java.util.UUID;

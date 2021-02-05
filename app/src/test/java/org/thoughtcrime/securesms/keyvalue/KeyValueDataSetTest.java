@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.keyvalue;
+package com.zamzam.chat.keyvalue;
 
 import org.junit.Test;
 

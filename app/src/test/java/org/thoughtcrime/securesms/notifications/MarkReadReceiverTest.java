@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.notifications;
+package com.zamzam.chat.notifications;
 
 import android.content.Context;
 
@@ -9,18 +9,17 @@ import com.annimon.stream.Stream;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
-import org.thoughtcrime.securesms.database.MessagingDatabase;
-import org.thoughtcrime.securesms.dependencies.ApplicationDependencies;
-import org.thoughtcrime.securesms.jobmanager.Data;
-import org.thoughtcrime.securesms.jobmanager.Job;
-import org.thoughtcrime.securesms.jobmanager.JobManager;
-import org.thoughtcrime.securesms.jobs.MultiDeviceReadUpdateJob;
-import org.thoughtcrime.securesms.recipients.RecipientId;
-import org.thoughtcrime.securesms.util.Util;
+import com.zamzam.chat.database.MessagingDatabase;
+import com.zamzam.chat.dependencies.ApplicationDependencies;
+import com.zamzam.chat.jobmanager.Data;
+import com.zamzam.chat.jobmanager.Job;
+import com.zamzam.chat.jobmanager.JobManager;
+import com.zamzam.chat.jobs.MultiDeviceReadUpdateJob;
+import com.zamzam.chat.recipients.RecipientId;
+import com.zamzam.chat.util.Util;
 import org.whispersystems.libsignal.util.Pair;
 
 import java.util.HashSet;

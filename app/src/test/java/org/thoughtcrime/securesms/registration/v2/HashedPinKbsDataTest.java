@@ -1,8 +1,8 @@
-package org.thoughtcrime.securesms.registration.v2;
+package com.zamzam.chat.registration.v2;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.registration.v2.testdata.KbsTestVector;
-import org.thoughtcrime.securesms.util.Util;
+import com.zamzam.chat.registration.v2.testdata.KbsTestVector;
+import com.zamzam.chat.util.Util;
 import org.whispersystems.signalservice.api.crypto.InvalidCiphertextException;
 import org.whispersystems.signalservice.api.kbs.HashedPin;
 import org.whispersystems.signalservice.api.kbs.KbsData;
@@ -15,7 +15,7 @@ import java.io.InputStream;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.thoughtcrime.securesms.testutil.SecureRandomTestUtil.mockRandom;
+import static com.zamzam.chat.testutil.SecureRandomTestUtil.mockRandom;
 
 public final class HashedPinKbsDataTest {
 

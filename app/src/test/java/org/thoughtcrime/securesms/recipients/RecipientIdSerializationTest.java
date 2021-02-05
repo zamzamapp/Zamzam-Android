@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.recipients;
+package com.zamzam.chat.recipients;
 
 import org.junit.Test;
 

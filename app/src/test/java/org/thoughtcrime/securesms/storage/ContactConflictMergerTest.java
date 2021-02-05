@@ -1,9 +1,9 @@
-package org.thoughtcrime.securesms.storage;
+package com.zamzam.chat.storage;
 
 import org.junit.Test;
-import org.thoughtcrime.securesms.logging.Log;
-import org.thoughtcrime.securesms.recipients.Recipient;
-import org.thoughtcrime.securesms.storage.StorageSyncHelper.KeyGenerator;
+import com.zamzam.chat.logging.Log;
+import com.zamzam.chat.recipients.Recipient;
+import com.zamzam.chat.storage.StorageSyncHelper.KeyGenerator;
 import org.whispersystems.libsignal.util.guava.Optional;
 import org.whispersystems.signalservice.api.push.SignalServiceAddress;
 import org.whispersystems.signalservice.api.storage.SignalContactRecord;
@@ -20,9 +20,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.when;
 import static org.powermock.api.mockito.PowerMockito.mock;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.assertContentsEqual;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.byteArray;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.setOf;
+import static com.zamzam.chat.testutil.TestHelpers.assertContentsEqual;
+import static com.zamzam.chat.testutil.TestHelpers.byteArray;
+import static com.zamzam.chat.testutil.TestHelpers.setOf;
 
 public class ContactConflictMergerTest {
 

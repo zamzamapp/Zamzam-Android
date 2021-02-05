@@ -1,9 +1,9 @@
-package org.thoughtcrime.securesms.storage;
+package com.zamzam.chat.storage;
 
 import org.junit.Test;
 import org.signal.zkgroup.InvalidInputException;
 import org.signal.zkgroup.groups.GroupMasterKey;
-import org.thoughtcrime.securesms.storage.StorageSyncHelper.KeyGenerator;
+import com.zamzam.chat.storage.StorageSyncHelper.KeyGenerator;
 import org.whispersystems.signalservice.api.storage.SignalGroupV2Record;
 
 import java.util.Collections;
@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.powermock.api.mockito.PowerMockito.mock;
 import static org.powermock.api.mockito.PowerMockito.when;
-import static org.thoughtcrime.securesms.testutil.TestHelpers.byteArray;
+import static com.zamzam.chat.testutil.TestHelpers.byteArray;
 
 public class GroupV2ConflictMergerTest {
 

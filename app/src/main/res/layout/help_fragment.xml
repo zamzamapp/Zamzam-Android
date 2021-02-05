@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -63,9 +64,11 @@
                 android:text="@string/HelpFragment__include_debug_log"
                 android:textColor="?title_text_color_secondary"
                 android:textSize="14sp"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="@id/help_fragment_debug_info"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/help_fragment_debug_info" />
+                app:layout_constraintTop_toTopOf="@id/help_fragment_debug_info"
+                tools:visibility="gone" />
 
             <Button
                 android:id="@+id/help_fragment_debug_info"
@@ -78,10 +81,12 @@
                 android:textAllCaps="false"
                 android:textAppearance="@style/Signal.Text.Body"
                 android:textSize="14sp"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toEndOf="@id/help_fragment_debug"
-                app:layout_constraintTop_toBottomOf="@id/help_fragment_problem" />
+                app:layout_constraintTop_toBottomOf="@id/help_fragment_problem"
+                tools:visibility="gone" />
 
             <TextView
                 android:id="@+id/help_fragment_feelings"
@@ -97,7 +102,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/help_fragment_debug_info" />
 
-            <org.thoughtcrime.securesms.components.emoji.EmojiImageView
+            <com.zamzam.chat.components.emoji.EmojiImageView
                 android:id="@+id/help_fragment_emoji_5"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -114,7 +119,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/help_fragment_feelings" />
 
-            <org.thoughtcrime.securesms.components.emoji.EmojiImageView
+            <com.zamzam.chat.components.emoji.EmojiImageView
                 android:id="@+id/help_fragment_emoji_4"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -128,7 +133,7 @@
                 app:layout_constraintStart_toEndOf="@id/help_fragment_emoji_5"
                 app:layout_constraintTop_toTopOf="@id/help_fragment_emoji_5" />
 
-            <org.thoughtcrime.securesms.components.emoji.EmojiImageView
+            <com.zamzam.chat.components.emoji.EmojiImageView
                 android:id="@+id/help_fragment_emoji_3"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -142,7 +147,7 @@
                 app:layout_constraintStart_toEndOf="@id/help_fragment_emoji_4"
                 app:layout_constraintTop_toTopOf="@id/help_fragment_emoji_4" />
 
-            <org.thoughtcrime.securesms.components.emoji.EmojiImageView
+            <com.zamzam.chat.components.emoji.EmojiImageView
                 android:id="@+id/help_fragment_emoji_2"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -156,7 +161,7 @@
                 app:layout_constraintStart_toEndOf="@id/help_fragment_emoji_3"
                 app:layout_constraintTop_toTopOf="@id/help_fragment_emoji_3" />
 
-            <org.thoughtcrime.securesms.components.emoji.EmojiImageView
+            <com.zamzam.chat.components.emoji.EmojiImageView
                 android:id="@+id/help_fragment_emoji_1"
                 android:layout_width="48dp"
                 android:layout_height="48dp"

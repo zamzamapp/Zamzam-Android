@@ -1,6 +1,6 @@
-package org.thoughtcrime.securesms.testutil;
+package com.zamzam.chat.testutil;
 
-import org.thoughtcrime.securesms.util.Util;
+import com.zamzam.chat.util.Util;
 
 import static org.mockito.Mockito.when;
 import static org.powermock.api.mockito.PowerMockito.doCallRealMethod;

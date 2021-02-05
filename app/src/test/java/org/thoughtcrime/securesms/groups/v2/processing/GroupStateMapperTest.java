@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.groups.v2.processing;
+package com.zamzam.chat.groups.v2.processing;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -6,8 +6,8 @@ import org.signal.storageservice.protos.groups.local.DecryptedGroup;
 import org.signal.storageservice.protos.groups.local.DecryptedGroupChange;
 import org.signal.storageservice.protos.groups.local.DecryptedMember;
 import org.signal.storageservice.protos.groups.local.DecryptedString;
-import org.thoughtcrime.securesms.logging.Log;
-import org.thoughtcrime.securesms.testutil.LogRecorder;
+import com.zamzam.chat.logging.Log;
+import com.zamzam.chat.testutil.LogRecorder;
 import org.whispersystems.signalservice.api.util.UuidUtil;
 
 import java.util.UUID;
@@ -22,7 +22,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
-import static org.thoughtcrime.securesms.groups.v2.processing.GroupStateMapper.LATEST;
+import static com.zamzam.chat.groups.v2.processing.GroupStateMapper.LATEST;
 
 public final class GroupStateMapperTest {
 

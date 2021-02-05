@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.phonenumbers;
+package com.zamzam.chat.phonenumbers;
 
 
 import org.junit.Before;

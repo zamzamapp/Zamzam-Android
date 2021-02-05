@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.groups;
+package com.zamzam.chat.groups;
 
 import org.signal.zkgroup.internal.Native;
 

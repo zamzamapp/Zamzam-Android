@@ -1,10 +1,10 @@
-package org.thoughtcrime.securesms.testutil;
+package com.zamzam.chat.testutil;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 
-import org.thoughtcrime.securesms.util.Hex;
+import com.zamzam.chat.util.Hex;
 
 import java.io.IOException;
 

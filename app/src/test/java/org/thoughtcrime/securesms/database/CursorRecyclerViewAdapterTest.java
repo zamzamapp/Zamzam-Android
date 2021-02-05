@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms.database;
+package com.zamzam.chat.database;
 
 import android.content.Context;
 import android.database.Cursor;

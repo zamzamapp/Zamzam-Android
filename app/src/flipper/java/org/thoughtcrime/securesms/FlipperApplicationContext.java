@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms;
+package com.zamzam.chat;
 
 import com.facebook.flipper.android.AndroidFlipperClient;
 import com.facebook.flipper.core.FlipperClient;
@@ -8,7 +8,7 @@ import com.facebook.flipper.plugins.inspector.InspectorFlipperPlugin;
 import com.facebook.flipper.plugins.sharedpreferences.SharedPreferencesFlipperPlugin;
 import com.facebook.soloader.SoLoader;
 
-import org.thoughtcrime.securesms.database.FlipperSqlCipherAdapter;
+import com.zamzam.chat.database.FlipperSqlCipherAdapter;
 
 public class FlipperApplicationContext extends ApplicationContext {
 

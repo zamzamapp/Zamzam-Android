@@ -29,17 +29,21 @@
             app:layout_constraintVertical_bias="0.20"
             tools:text="@string/CreateKbsPinFragment__create_your_pin" />
 
-        <org.thoughtcrime.securesms.util.views.LearnMoreTextView
+        <com.zamzam.chat.util.views.LearnMoreTextView
             android:id="@+id/edit_kbs_pin_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="27dp"
+            android:layout_marginEnd="16dp"
+            android:autoLink="all"
             android:gravity="center_horizontal"
             android:minHeight="66dp"
+            android:textAlignment="textStart"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:textColor="?attr/title_text_color_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_title"
             tools:text="@string/CreateKbsPinFragment__pins_keep_information_stored_with_signal_encrypted" />
 
@@ -52,9 +56,11 @@
             android:gravity="center_horizontal"
             android:inputType="numberPassword"
             android:minWidth="210dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_description" />
+            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_description"
+            tools:visibility="gone" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/edit_kbs_pin_lottie_progress"
@@ -64,7 +70,8 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_description" />
+            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_description"
+            tools:visibility="gone" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/edit_kbs_pin_lottie_end"
@@ -74,7 +81,8 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_description" />
+            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_description"
+            tools:visibility="gone" />
 
         <TextView
             android:id="@+id/edit_kbs_pin_input_label"
@@ -82,35 +90,40 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_input"
             app:layout_goneMarginTop="65dp"
-            tools:text="PIN must be at least 4 digits" />
+            tools:text="PIN must be at least 4 digits"
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/edit_kbs_pin_keyboard_toggle"
             style="@style/Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_input_label"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@id/edit_kbs_pin_confirm"
+            app:layout_constraintTop_toBottomOf="@id/edit_kbs_pin_input_label"
             app:layout_constraintVertical_bias="1.0"
-            tools:text="Create Alphanumeric Pin" />
+            tools:layout_editor_absoluteX="32dp"
+            tools:text="Create Alphanumeric Pin"
+            tools:visibility="gone" />
 
         <Button
             android:id="@+id/edit_kbs_pin_confirm"
             style="@style/Button.Primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/cta_button_background"
             android:text="@string/BaseKbsPinFragment__next"
             android:textColor="@color/core_white"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
