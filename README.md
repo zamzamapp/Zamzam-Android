@@ -13,14 +13,6 @@ We use GitHub for bug tracking. Please search the existing issues for your bug a
 
 https://github.com/zamzamapp/Zamzam-Android/issues
 
-## Joining the Beta
-Want to live life on the bleeding edge and help out with testing?
-
-You can subscribe to Zamzam Android Beta releases here:
-https://play.google.com/apps/testing/com.betdeal.securechat
- 
-If you're interested in a life of peace and tranquility, stick with the standard releases.
-
 Help
 ====
 ## Support
