@@ -105,7 +105,7 @@ android {
         versionName canonicalVersionName
         applicationId "com.zamzam.chat"
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 29
         multiDexEnabled true
 
         vectorDrawables.useSupportLibrary = true
